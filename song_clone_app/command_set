@@ -1,0 +1,16 @@
+npx create-react-app Spotify clone
+initialise on firebase creating new project and app name
+
+npm start   >>>     TO START IT ON WEB BROWSER
+https://developer.spotify.com/          >>>     DASHBOARD (at top)  >>> login to spotify a/c
+create an app (name and decp)   >>> COPY CLIENT ID -- 5124416049034541803248855ed70b05
+EDIT SETTINGS app>>>    THEN REDIRECT URL(http://localhost:3000/)   >>> ADD
+
+ npm i spotify-web-api-js           //TO WRAP UP PKAYER SONGS ETC
+
+//HIDE SCROLL BAR --- INDEX.CSS
+ body::-webkit-scrollbar{
+  display:none;
+}
+
+PLAYLIST ID   >>>> 37i9dQZEVXcI9du7r3rBqv
