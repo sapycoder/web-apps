@@ -1,0 +1,32 @@
+npx create-react-app whatsapp_clone
+
+cd whatsapp_clone
+npm start
+
+>>> CREATE NEW PROJECT ON FIREBASE >>> PROJECT SETTINGS -- CONSOLE CODE COPY >>> CREATE firebase.js AND PASTE
+
+//AFTER SIDEBAR CODING ---- INSTALL FOR ICONS
+--->npm install @material-ui/core  
+--->npm install @material-ui/icons
+
+//TO SET UP DATABASE
+npm i firebase    >>  GOTO TO FIREBASE >>  DATABASE  >> CREATE NEW DB >> tTEST DB >> START COLLECTION >> NAME OF ROOM >> FILL IN " name : STRING : name of the room
+>> ADD DOCUMENT (to create new room)
+______________________________________________________________________________________________________________
+
+delete all test files
+app.css     >> delete all contents
+index.css   >> * { margin: 0;}
+
+firebase.js >> import firebase from "firebase";
+....
+firebase.js >> const firebaseApp = firebase.initializeApp(firebaseConfig)           **TO INITIALISE APP ON FIREBASE
+firebase.js >> const db = firebaseApp.firestore();                                  **EXCEPT FIRESTORE INSTANCE DATABASE
+const auth = firebase.auth();
+const provider = new firebase.auth.GoogleAuthProvider();
+
+//STATE PROVIDER TO WRAP DATA AND SEND TO DATA LAYER PUSH THE USER AND THEN PULLING IT OUT
+    <StateProvider initialState={initialState}
+      reducer={reducer}>
+    </StateProvider>
+
